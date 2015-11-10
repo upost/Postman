@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Postman!</string>
+    <string name="enter_station_name">Name des neuen Postamts</string>
+    <string name="has_location">Geokoordinaten ermittelt</string>
+    <string name="msg_delivered">Brief zugestellt - du erhältst: </string>
+    <string name="msg_new_letter">Dieses Postamt hat einen Brief für %1 $s. Willst du die Lieferung übernehmen?</string>
+    <string name="msg_not_enough_cash">Nicht genug Geld - Bau eines Postamts kostet </string>
+    <string name="msg_station_exists">Hier gibt es schon ein Postamt.</string>
+    <string name="no_new_letter">Dieses Postamt hat im Moment keine zuzustellenden Briefe.</string>
+</resources>

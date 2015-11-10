@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Postman!</string>
+
+    <string name="msg_not_enough_cash">not enough cash - building a station costs </string>
+    <string name="msg_station_exists">A station exists at this location: </string>
+    <string name="msg_delivered">Letter delivered - you earned: </string>
+    <string name="enter_station_name">Enter a station name</string>
+    <string name="msg_new_letter">This station has a letter to %1$s. Do you want to deliver it for %2$d?</string>
+    <string name="no_new_letter">This station has no new letter to deliver.</string>
+    <string name="has_location">Location found</string>
+
+</resources>

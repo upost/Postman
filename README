@@ -1,0 +1,17 @@
+POSTMAN
+
+Simple demo of a location based game for Android.
+
+Using osmdroid for Openstreetmap.org (osm) maps.
+
+Build Post stations and deliver letters to earn money in this game.
+
+Note: This game is not production ready, it's just a demo.
+
+Reference:
+My book "Spieleprogrammierung mit Android Studio", chapter 7
+https://www.rheinwerk-verlag.de/spieleprogrammierung-mit-android-studio_3537/
+
+Updated to fit latest osmdroid version
+
+

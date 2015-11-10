@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="inkscape-grafiken.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3893">
+      <stop
+         style="stop-color:#88aa00;stop-opacity:1;"
+         offset="0"
+         id="stop3895" />
+      <stop
+         style="stop-color:#faffe8;stop-opacity:1;"
+         offset="1"
+         id="stop3897" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3885">
+      <stop
+         style="stop-color:#5c7cf5;stop-opacity:1;"
+         offset="0"
+         id="stop3887" />
+      <stop
+         style="stop-color:#dfe6fb;stop-opacity:1;"
+         offset="1"
+         id="stop3889" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3847">
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1;"
+         offset="0"
+         id="stop3849" />
+      <stop
+         style="stop-color:#fffefb;stop-opacity:1;"
+         offset="1"
+         id="stop3851" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3847"
+       id="linearGradient3853"
+       x1="236.01439"
+       y1="239.62741"
+       x2="304.42236"
+       y2="107.9413"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3847"
+       id="linearGradient3877"
+       gradientUnits="userSpaceOnUse"
+       x1="236.01439"
+       y1="239.62741"
+       x2="304.42236"
+       y2="107.9413" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3847"
+       id="linearGradient3883"
+       gradientUnits="userSpaceOnUse"
+       x1="236.01439"
+       y1="239.62741"
+       x2="304.42236"
+       y2="107.9413" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3885"
+       id="linearGradient3891"
+       x1="284.40427"
+       y1="569.58606"
+       x2="305.98587"
+       y2="477.09952"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3893"
+       id="linearGradient3899"
+       x1="585.75183"
+       y1="546.33972"
+       x2="643.63159"
+       y2="454.46573"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3847"
+       id="linearGradient3907"
+       gradientUnits="userSpaceOnUse"
+       x1="236.01439"
+       y1="239.62741"
+       x2="304.42236"
+       y2="107.9413"
+       gradientTransform="translate(-46.549504,50.836959)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3847"
+       id="linearGradient3915"
+       gradientUnits="userSpaceOnUse"
+       x1="236.01439"
+       y1="239.62741"
+       x2="304.42236"
+       y2="107.9413"
+       gradientTransform="matrix(0.88914894,0,0,0.88914894,323.39915,98.334415)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.6326705"
+     inkscape:cx="368.04751"
+     inkscape:cy="659.47821"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="1600"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="color:#000000;fill:url(#linearGradient3891);stroke:none;stroke-width:8.10000038000000089;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1"
+       id="rect3798"
+       width="254.94162"
+       height="152.52489"
+       x="114.13108"
+       y="494.54861"
+       ry="41.074619"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable-mdpi/letter.png"
+       inkscape:export-xdpi="22.59"
+       inkscape:export-ydpi="22.59" />
+    <g
+       id="g3781"
+       style="stroke:#ffffff;stroke-opacity:1"
+       transform="matrix(1.3190577,0,0,1.2272118,-69.406382,-114.94353)"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable/letter.png"
+       inkscape:export-xdpi="20"
+       inkscape:export-ydpi="20">
+      <path
+         sodipodi:nodetypes="scssssssss"
+         inkscape:connector-curvature="0"
+         id="rect3755"
+         d="m 171.59184,511.14826 63.40816,0 63.40816,0 c 11.05154,0 19.94863,9.91599 19.94863,22.23317 l 0,50.81867 c 0,12.31718 -8.89709,22.23317 -19.94863,22.23317 l -126.81632,0 c -11.05154,0 -19.94863,-9.91599 -19.94863,-22.23317 l 0,-50.81867 c 0,-12.31718 8.89709,-22.23317 19.94863,-22.23317 z"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3758"
+         d="m 165.89224,512.73633 69.82022,55.58292 65.5455,-53.99484"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3760"
+         d="m 164.46733,606.43326 51.29649,-53.99484"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3762"
+         d="M 305.53267,606.43326 257.08599,550.85034"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       style="color:#000000;fill:url(#linearGradient3907);fill-opacity:1;fill-rule:nonzero;stroke:#ffcc00;stroke-width:7.91683817;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 34.787483,204.12264 152.233597,-63.42045 155.09243,63.42045 c 15.04611,0 -44.31213,-1e-5 -44.31213,-1e-5 l 0,151.39079 c 0,14.3562 -12.11293,25.91373 -27.15904,25.91373 l -164.38368,0 c -15.046114,0 -27.159044,-11.55753 -27.159044,-25.91373 l 0,-151.39079 c 0,0 -59.35824,1e-5 -44.312133,1e-5 z"
+       id="rect3753"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccsssscc"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable-hdpi/ic_launcher.png"
+       inkscape:export-xdpi="20.549999"
+       inkscape:export-ydpi="20.549999" />
+    <g
+       transform="translate(-46.947163,-265.87892)"
+       style="stroke:#ffffff;stroke-opacity:1"
+       id="g3787">
+      <path
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 171.59184,511.14826 63.40816,0 63.40816,0 c 11.05154,0 19.94863,9.91599 19.94863,22.23317 l 0,50.81867 c 0,12.31718 -8.89709,22.23317 -19.94863,22.23317 l -126.81632,0 c -11.05154,0 -19.94863,-9.91599 -19.94863,-22.23317 l 0,-50.81867 c 0,-12.31718 8.89709,-22.23317 19.94863,-22.23317 z"
+         id="path3789"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="scssssssss" />
+      <path
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 165.89224,512.73633 69.82022,55.58292 65.5455,-53.99484"
+         id="path3791"
+         inkscape:connector-curvature="0" />
+      <path
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 164.46733,606.43326 51.29649,-53.99484"
+         id="path3793"
+         inkscape:connector-curvature="0" />
+      <path
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="M 305.53267,606.43326 257.08599,550.85034"
+         id="path3795"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="color:#000000;fill:url(#linearGradient3899);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.10000038000000089;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 685.89361,586.4286 c 0,44.82255 -46.69785,65.91318 -102.76598,65.91318 -56.06813,0 -100.27468,-21.09063 -100.27468,-65.91318 0,-22.41128 13.25359,-48.56982 29.73461,-61.87154 16.48102,-13.30172 49.33373,-23.6909 55.31589,-31.50085 5.98214,-7.80996 -20.66867,-40.46865 -20.66867,-40.46865 l 37.1385,8.74053 40.87544,-7.84375 c 0,0 -41.59859,30.86513 -35.61644,38.67509 5.98214,7.80995 48.73135,18.59565 66.52671,32.39763 17.79535,13.80198 29.73462,39.46026 29.73462,61.87154 z"
+       id="path3800"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssszzccczzs"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable-mdpi/cash.png"
+       inkscape:export-xdpi="28.370001"
+       inkscape:export-ydpi="28.370001" />
+    <text
+       xml:space="preserve"
+       style="font-size:177.13529968px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Stencil;-inkscape-font-specification:Stencil Bold"
+       x="382.37659"
+       y="830.9375"
+       id="text3803"
+       sodipodi:linespacing="125%"
+       transform="scale(1.3432197,0.74447984)"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable/cash.png"
+       inkscape:export-xdpi="20"
+       inkscape:export-ydpi="20"><tspan
+         sodipodi:role="line"
+         id="tspan3805"
+         x="382.37659"
+         y="830.9375">$</tspan></text>
+    <path
+       inkscape:export-ydpi="17.799999"
+       inkscape:export-xdpi="17.799999"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable-mdpi/poststation_new.png"
+       sodipodi:nodetypes="ccccsssscc"
+       inkscape:connector-curvature="0"
+       id="path3865"
+       d="m 395.71985,234.62821 135.35833,-56.39022 137.90027,56.39022 c 13.37824,0 -39.40008,0 -39.40008,0 l 0,134.60896 c 0,12.7648 -10.7702,23.04116 -24.14843,23.04116 l -146.16158,0 c -13.37823,0 -24.14843,-10.27636 -24.14843,-23.04116 l 0,-134.60896 c 0,0 -52.77831,0 -39.40008,0 z"
+       style="color:#000000;fill:url(#linearGradient3915);fill-opacity:1;fill-rule:nonzero;stroke:#ffcc00;stroke-width:7.03924847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       id="g3867"
+       style="stroke:#ffffff;stroke-opacity:1"
+       transform="matrix(0.88914894,0,0,0.88914894,323.04557,-183.27317)">
+      <path
+         sodipodi:nodetypes="scssssssss"
+         inkscape:connector-curvature="0"
+         id="path3869"
+         d="m 171.59184,511.14826 63.40816,0 63.40816,0 c 11.05154,0 19.94863,9.91599 19.94863,22.23317 l 0,50.81867 c 0,12.31718 -8.89709,22.23317 -19.94863,22.23317 l -126.81632,0 c -11.05154,0 -19.94863,-9.91599 -19.94863,-22.23317 l 0,-50.81867 c 0,-12.31718 8.89709,-22.23317 19.94863,-22.23317 z"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3871"
+         d="m 165.89224,512.73633 69.82022,55.58292 65.5455,-53.99484"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3873"
+         d="m 164.46733,606.43326 51.29649,-53.99484"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3875"
+         d="M 305.53267,606.43326 257.08599,550.85034"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:8.52927876;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g3879"
+       transform="translate(-2.4499739,22.662259)"
+       inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable-mdpi/poststation_new.png"
+       inkscape:export-xdpi="17.799999"
+       inkscape:export-ydpi="17.799999">
+      <rect
+         inkscape:export-ydpi="20"
+         inkscape:export-xdpi="20"
+         inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable/poststation_new.png"
+         ry="11.111681"
+         y="155.34673"
+         x="557.60419"
+         height="38.385796"
+         width="160.61426"
+         id="rect3838"
+         style="color:#000000;fill:#88aa00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.10000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="20"
+         inkscape:export-xdpi="20"
+         inkscape:export-filename="/home/uwe/Develop/workspace-android-studio/PostmanProject/Postman/src/main/res/drawable/poststation_new.png"
+         transform="matrix(0,1,-1,0,0,0)"
+         style="color:#000000;fill:#88aa00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.10000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3840"
+         width="160.61426"
+         height="38.385796"
+         x="94.232491"
+         y="-657.10419"
+         ry="11.111681" />
+    </g>
+  </g>
+</svg>
