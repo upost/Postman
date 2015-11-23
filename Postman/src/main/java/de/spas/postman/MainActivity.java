@@ -30,7 +30,7 @@ import de.spas.tools.BaseGameActivity;
 public class MainActivity extends BaseGameActivity implements View.OnClickListener, ItemizedIconOverlay.OnItemGestureListener<OverlayItem> {
 
 
-    public static final String TYPEFACE_NAME = "CanarsieSlab";
+    public static final String TYPEFACE_NAME = "AlfaSlabOne-Regular";
     private static final double MIN_DISTANCE_STATIONS = 100;
     private static final int POSTSTATION_COST = 500;
     private static final float LETTER_CASH_PER_METER = 0.4f;
@@ -62,13 +62,14 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
         gameStorage = new GameStorage(this, DEFAULT_CASH);
 
         // create mapView
-        mapView = new MapView(this, 256, new DefaultResourceProxyImpl(this));
+        mapView = new MapView(this);
         mapView.setBuiltInZoomControls(true);
         mapView.setMultiTouchControls(true);
         mapView.getController().setZoom(16);
 
         // create stations overlay
-        postStationsOverlay = new ItemizedIconOverlay<OverlayItem>(items, getResources().getDrawable(R.drawable.poststation), this, new DefaultResourceProxyImpl(this));
+        postStationsOverlay = new ItemizedIconOverlay<OverlayItem>(items,
+                getResources().getDrawable(R.drawable.poststation), this, new DefaultResourceProxyImpl(this));
         updateStationItems();
         mapView.getOverlays().add(postStationsOverlay);
 
