@@ -35,7 +35,7 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
     private static final int POSTSTATION_COST = 500;
     private static final float LETTER_CASH_PER_METER = 0.4f;
     private static final int DEFAULT_CASH = 1200;
-    private static final double POSTSTATION_VISIT_MIN_DISTANCE = 20;
+    private static final double POSTSTATION_VISIT_MIN_DISTANCE = 50;
     public static final String LOG_TAG = "postman";
     private MapView mapView;
     private MyLocationNewOverlay myLocationOverlay;
@@ -134,7 +134,13 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
 
         private void fillView(View view, int position) {
             TextView t = (TextView) view.findViewById(R.id.target);
-            t.setText(getItem(position).target);
+            Location location = myLocationOverlay.getLastFix();
+            GameStorage.PostStation ps = gameStorage.findPostStationByName(getItem(position).target);
+            float res[] = new float[1];
+            Location.distanceBetween(location.getLatitude(), location.getLongitude(), ps.latitude, ps.longitude, res);
+            int dist = Math.round(res[0]);
+            String ds =  dist>1000 ? (" ("+dist/1000+"km)"):(" ("+dist+"m)");
+            t.setText(getItem(position).target + ds);
             TextView c = (TextView) view.findViewById(R.id.value);
             c.setText(Integer.toString(getItem(position).value));
             if(targetStationReached(getItem(position))!=null) {
