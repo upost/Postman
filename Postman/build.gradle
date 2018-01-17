@@ -4,20 +4,26 @@ apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
+    google()
 }
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 22
+        minSdkVersion 14
+        targetSdkVersion 27
     }
 }
 
 dependencies {
-	compile 'com.android.support:appcompat-v7:22.0.0'
+	compile 'com.android.support:appcompat-v7:27.0.2'
     compile 'org.slf4j:slf4j-android:1.7.13'
-    compile 'org.osmdroid:osmdroid-android:5.0.1'
+    compile 'org.osmdroid:osmdroid-android:5.6.5'
 }

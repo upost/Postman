@@ -14,11 +14,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.osmdroid.DefaultResourceProxyImpl;
+
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.ItemizedIconOverlay;
 import org.osmdroid.views.overlay.OverlayItem;
+import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
 
 import java.util.ArrayList;
@@ -69,12 +70,12 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
 
         // create stations overlay
         postStationsOverlay = new ItemizedIconOverlay<OverlayItem>(items,
-                getResources().getDrawable(R.drawable.poststation), this, new DefaultResourceProxyImpl(this));
+                getResources().getDrawable(R.drawable.poststation), this, this);
         updateStationItems();
         mapView.getOverlays().add(postStationsOverlay);
 
         // create my location overlay
-        myLocationOverlay = new MyLocationNewOverlay(getApplicationContext(), mapView);
+        myLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(this), mapView);
         mapView.getOverlays().add(myLocationOverlay);
 
         ViewGroup container = (ViewGroup) findViewById(R.id.container);
