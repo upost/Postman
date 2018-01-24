@@ -10,5 +10,7 @@
     <string name="msg_new_letter">This station has a letter to %1$s. Do you want to deliver it for %2$d?</string>
     <string name="no_new_letter">This station has no new letter to deliver.</string>
     <string name="has_location">Location found</string>
+    <string name="cannot_run">cannot run without permissions</string>
+    <string name="thanks_for_granting">thanks for granting permissions to run this game</string>
 
 </resources>

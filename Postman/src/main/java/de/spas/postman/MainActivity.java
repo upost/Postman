@@ -1,10 +1,14 @@
 package de.spas.postman;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +17,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
@@ -30,6 +33,8 @@ import de.spas.tools.BaseGameActivity;
 
 public class MainActivity extends BaseGameActivity implements View.OnClickListener, ItemizedIconOverlay.OnItemGestureListener<OverlayItem> {
 
+    private static final int MY_PERMISSIONS_REQUEST = 8937;
+    public static final String[] PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     public static final String TYPEFACE_NAME = "AlfaSlabOne-Regular";
     private static final double MIN_DISTANCE_STATIONS = 100;
@@ -59,8 +64,20 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
         setTypeface((TextView) findViewById(R.id.title), TYPEFACE_NAME);
         setTypeface((TextView) findViewById(R.id.player_cash), TYPEFACE_NAME);
 
+
+        int permissionCheck1 = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
+        int permissionCheck2 = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (permissionCheck1 == PackageManager.PERMISSION_DENIED || permissionCheck2 == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(this, PERMISSIONS, MY_PERMISSIONS_REQUEST);
+        } else {
+            initPermissionDependent();
+        }
+    }
+
+    private void initPermissionDependent() {
         // open game engine
         gameStorage = new GameStorage(this, DEFAULT_CASH);
+
 
         // create mapView
         mapView = new MapView(this);
@@ -71,12 +88,9 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
         // create stations overlay
         postStationsOverlay = new ItemizedIconOverlay<OverlayItem>(items,
                 getResources().getDrawable(R.drawable.poststation), this, this);
+
         updateStationItems();
         mapView.getOverlays().add(postStationsOverlay);
-
-        // create my location overlay
-        myLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(this), mapView);
-        mapView.getOverlays().add(myLocationOverlay);
 
         ViewGroup container = (ViewGroup) findViewById(R.id.container);
         container.removeAllViews();
@@ -84,18 +98,51 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
 
         showMap();
 
-        adapter = new LetterAdapter(this,0,0, gameStorage.findLetters());
+        // create my location overlay
+        myLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(this), mapView);
+        myLocationOverlay.enableMyLocation();
+        myLocationOverlay.enableFollowLocation();
+        mapView.getOverlays().add(myLocationOverlay);
 
-        ListView listView = (ListView) findViewById(R.id.letters);
+        adapter = new LetterAdapter(this, 0, 0, gameStorage.findLetters());
+
+        ListView listView = findViewById(R.id.letters);
         listView.setAdapter(adapter);
 
-        setAnimatedClickListener(R.id.poststation,R.anim.buttonpress,this);
-        setAnimatedClickListener(R.id.poststation_new,R.anim.buttonpress,this);
-        setAnimatedClickListener(R.id.letter,R.anim.buttonpress,this);
+        setAnimatedClickListener(R.id.poststation, R.anim.buttonpress, this);
+        setAnimatedClickListener(R.id.poststation_new, R.anim.buttonpress, this);
+        setAnimatedClickListener(R.id.letter, R.anim.buttonpress, this);
 
+
+        update();
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST: {
+                int granted = 0;
+                for (int i = 0; i < grantResults.length; i++) {
+                    if (grantResults[i] == PackageManager.PERMISSION_GRANTED) granted++;
+                }
+                if (granted == PERMISSIONS.length) {
 
+                    Toast.makeText(MainActivity.this, R.string.thanks_for_granting, Toast.LENGTH_LONG).show();
+
+
+                    initPermissionDependent();
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(MainActivity.this, R.string.cannot_run, Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+        }
+    }
 
     private void showMap() {
         hideView(R.id.letters);
@@ -168,34 +215,40 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
     @Override
     protected void onResume() {
         super.onResume();
-        myLocationOverlay.enableMyLocation();
-        myLocationOverlay.enableFollowLocation();
+        if (myLocationOverlay != null) {
+            myLocationOverlay.enableMyLocation();
+            myLocationOverlay.enableFollowLocation();
+            myLocationOverlay.runOnFirstFix(new Runnable() {
+                @Override
+                public void run() {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(MainActivity.this, R.string.has_location, Toast.LENGTH_SHORT).show();
+                            Log.d("postman", "location=" + myLocationOverlay.getMyLocation().toString());
+                        }
+                    });
+                }
+            });
+        }
         update();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        myLocationOverlay.disableMyLocation();
-        myLocationOverlay.runOnFirstFix(new Runnable() {
-            @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(MainActivity.this,R.string.has_location,Toast.LENGTH_SHORT).show();
-                        Log.d("postman", "location=" + myLocationOverlay.getMyLocation().toString());
-                    }
-                });
-            }
-        });
+        if (myLocationOverlay != null) {
+            myLocationOverlay.disableMyLocation();
+        }
     }
 
     private void update() {
-        GameStorage.Player p = gameStorage.findPlayer();
-        Log.d("postman","cash="+p.cash);
-        //((TextView)findViewById(R.id.player_cash)).setText("test");
-        setText(R.id.player_cash, String.format("%05d", p.cash));
+        if (gameStorage != null) {
+            GameStorage.Player p = gameStorage.findPlayer();
+            Log.d("postman", "cash=" + p.cash);
+            //((TextView)findViewById(R.id.player_cash)).setText("test");
+            setText(R.id.player_cash, String.format("%05d", p.cash));
+        }
     }
 
     @Override
